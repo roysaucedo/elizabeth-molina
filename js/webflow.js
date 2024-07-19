@@ -12654,24 +12654,24 @@
             afterSubmit(data);
           });
         }
-        function afterSubmit(data) {
-          var form = data.form;
-          var redirect = data.redirect;
-          var success = data.success;
-          if (success && redirect) {
-            Webflow.location(redirect);
-            return;
-          }
-          data.done.toggle(success);
-          data.fail.toggle(!success);
-          if (success) {
-            data.done.focus();
-          } else {
-            data.fail.focus();
-          }
-          form.toggle(!success);
-          reset(data);
-        }
+        // function afterSubmit(data) {
+        //   var form = data.form;
+        //   var redirect = data.redirect;
+        //   var success = data.success;
+        //   if (success && redirect) {
+        //     Webflow.location(redirect);
+        //     return;
+        //   }
+        //   data.done.toggle(success);
+        //   data.fail.toggle(!success);
+        //   if (success) {
+        //     data.done.focus();
+        //   } else {
+        //     data.fail.focus();
+        //   }
+        //   form.toggle(!success);
+        //   reset(data);
+        // }
         function preventDefault(data) {
           data.evt && data.evt.preventDefault();
           data.evt = null;
